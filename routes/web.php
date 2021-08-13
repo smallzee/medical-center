@@ -28,6 +28,19 @@ Route::group(['namespace'=>'account','prefix'=>'auth'], function (){
     Route::resource('login', "LoginController");
 });
 
+Route::group(['namespace'=>'user','prefix'=>'user'], function (){
+    Route::get('/dashboard', "UserController@dashboard")->name('dashboard');
+    Route::get('/password', "UserController@password")->name('password');
+    Route::post('/update_password', "UserController@update_password")->name('update_password');
+
+    Route::get('/add-student', "StudentController@add_student")->name('add_student');
+    Route::post('/create_new_student', "StudentController@create_new_student")->name('create_new_student');
+
+    Route::get('/students', "StudentController@student")->name('student');
+    Route::get('/view-student/{students}', "StudentController@view_student")->name('view_student');
+    Route::get('/logout', "UserController@logout")->name('logout');
+});
+
 
 // admin route
 Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
@@ -40,7 +53,9 @@ Route::group(['namespace'=>'admin','prefix'=>'admin'], function (){
     Route::post('/create_new_role', "RoleController@create_new_role")->name('create_new_role');
     Route::post('/update_role', "RoleController@update_role")->name('update_role');
 
+
     Route::get('/add-student', "StudentController@add_student")->name('add_student');
+     Route::post('/create_new_student', "StudentController@create_new_student")->name('create_new_student');
     Route::get('/student', "StudentController@student")->name('student');
 
     Route::get('/add-staff', "StaffController@add_staff")->name('add_staff');

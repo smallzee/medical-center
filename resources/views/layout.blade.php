@@ -57,7 +57,7 @@
                     <!-- Main box -->
                     <div class="main-box">
                         <div class="logo-box">
-                            <div class="logo"><a href="{{url('/')}}"><img src="{{url('assets/images/logo.png')}}" alt="" title=""></a></div>
+                            <div class="logo"><a href="{{url('/')}}"><img src="{{url('assets/images/logo.png')}}" alt="" style="width: 50px; height: 50px;" title=""></a></div>
                         </div>
 
                         <!--Nav Box-->
@@ -86,7 +86,7 @@
 
                     <div class="main-box">
                         <div class="logo-box">
-                            <div class="logo"><a href="{{url('/')}}"><img src="images/logo.png" alt="" title=""></a></div>
+                            <div class="logo"><a href="{{url('/')}}"><img src="{{url("assets/images/logo.png")}}" alt="" style="width: 50px; height: 50px;" title=""></a></div>
                         </div>
 
                         <!--Keep This Empty / Menu will come through Javascript-->
@@ -121,7 +121,7 @@
                 <button class="close-search"><span class="fa fa-times"></span></button>
 
                 <div class="search-inner">
-                    <form method="post" action="blog-showcase.html">
+                    <form method="post" action="">
                         <div class="form-group">
                             <input type="search" name="search-field" value="" placeholder="Search..." required="">
                             <button type="submit"><i class="flaticon-magnifying-glass"></i></button>
@@ -146,23 +146,8 @@
                         <div class="big-column col-xl-6 col-lg-12 col-md-12 col-sm-12">
                             <div class="row">
                                 <!--Footer Column-->
-                                <div class="footer-column col-xl-7 col-lg-6 col-md-6 col-sm-12">
-                                    <div class="footer-widget about-widget">
-                                        <div class="logo">
-                                            <a href="{{url('/')}}"><img src="{{url('assets/images/logo-2.png')}}" alt="" /></a>
-                                        </div>
-                                        <ul class="social-icon-three">
-                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-skype"></i></a></li>
-                                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
                                 <!--Footer Column-->
-                                <div class="footer-column col-xl-5 col-lg-6 col-md-6 col-sm-12">
+                                <div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
                                     <div class="footer-widget">
                                         <h2 class="widget-title">Our Link</h2>
                                         <ul class="user-links">

@@ -1,4 +1,4 @@
-@extends('admin.layout')
+@extends('users.layout')
 
 @push('content')
 

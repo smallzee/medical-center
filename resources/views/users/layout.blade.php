@@ -101,42 +101,29 @@
             <!-- sidebar menu -->
             <ul class="sidebar-menu">
                 <li>
-                    <a href="{{url('admin/dashboard')}}"><i class="fa fa-home"></i><span>Dashboard</span>
+                    <a href="{{url('user/dashboard')}}"><i class="fa fa-home"></i><span>Dashboard</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{url('admin/staff')}}"><i class="fa fa-hospital-o"></i><span>All Staff</span>
+                    <a href="{{url('user/add-student')}}"><i class="fa fa-plus"></i><span>Add Student</span>
                     </a>
                 </li>
 
                 <li>
-                    <a href="{{url('admin/add-role')}}"><i class="fa fa-plus"></i><span>Add New Role</span>
+                    <a href="{{url('user/all-students')}}"><i class="fa fa-user"></i><span>All Students</span>
                     </a>
                 </li>
 
+
                 <li>
-                    <a href="{{url('admin/role')}}"><i class="fa fa-hospital-o"></i><span>All Staff Role</span>
+                    <a href="{{url('user/password')}}"><i class="fa fa-lock"></i><span> Change Password </span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="{{url('admin/student')}}"><i class="fa fa-hospital-o"></i><span>All Students</span>
-                    </a>
-                </li>
 
                 <li>
-                    <a href="{{url('admin/add-staff')}}"><i class="fa fa-plus"></i><span>Add New Staff</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{url('admin/add-student')}}"><i class="fa fa-plus"></i><span>Add New Student</span>
-                    </a>
-                </li>
-
-                <li>
-                    <a href="{{url('admin/logout')}}">
+                    <a href="{{url('user/logout')}}">
                         <i class="fa fa-sign-out"></i><span> Logout</span>
                     </a>
                 </li>

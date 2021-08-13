@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\admin;
+namespace App\Http\Controllers\user;
 
 use App\Http\Controllers\Controller;
 use App\Students;
@@ -18,7 +18,7 @@ class StudentController extends Controller
 
     public function add_student(){
         $data['page_title'] = "Add Student";
-        return view('admin.add-student',$data);
+        return view('users.add-student',$data);
     }
 
     public function create_new_student(Request $request){
@@ -59,6 +59,10 @@ class StudentController extends Controller
 
     public function student(){
         $data['page_title'] = "All Students";
-        return view('admin.students',$data);
+        return view('users.students',$data);
+    }
+
+    public function view_student(Students $students){
+
     }
 }
